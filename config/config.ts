@@ -168,7 +168,7 @@ export default defineConfig({
   mock: {
     include: ['mock/**/*', 'src/pages/**/_mock.ts'],
   },
-  utoopack: {},
+  // utoopack: {}, // Disabled due to Windows path issues with Turbopack
   requestRecord: {},
   exportStatic: {},
   define: {
