@@ -52,6 +52,22 @@ export default [
     component: './table-list',
   },
   {
+    path: '/dashboard',
+    name: 'dashboard',
+    icon: 'dashboard',
+    routes: [
+      {
+        path: '/dashboard',
+        redirect: '/dashboard/analysis',
+      },
+      {
+        path: '/dashboard/analysis',
+        name: 'dashboard.analysis',
+        component: './dashboard/analysis',
+      },
+    ],
+  },
+  {
     path: '/refund',
     name: 'refund',
     icon: 'profile',
