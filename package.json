@@ -37,6 +37,7 @@
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
     "@ant-design/pro-components": "^2.8.9",
+    "@antv/g2plot": "^2.4.32",
     "antd": "^6.0.0",
     "antd-style": "^3.7.0",
     "classnames": "^2.5.1",

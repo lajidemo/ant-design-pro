@@ -1,0 +1,152 @@
+.analysis-page {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: calc(100vh - 64px);
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+      color: #262626;
+    }
+
+    .header-actions {
+      .refresh-btn {
+        padding: 8px 16px;
+        background: #1890ff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:hover {
+          background: #40a9ff;
+        }
+
+        &:active {
+          background: #096dd9;
+        }
+      }
+    }
+  }
+}
+
+.data-module {
+  margin-bottom: 24px;
+
+  .stat-card {
+    background: linear-gradient(135deg, #fff 0%, #fafafa 100%);
+    border-radius: 8px;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .stat-info {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+
+    .growth {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 14px;
+
+      &.up {
+        color: #52c41a;
+      }
+
+      &.down {
+        color: #ff4d4f;
+      }
+    }
+  }
+
+  .day-stat {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #8c8c8c;
+  }
+}
+
+.sales-module {
+  .filter-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .ant-card {
+    border-radius: 8px;
+  }
+
+  .rank-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-weight: 600;
+    color: #fff;
+
+    &.rank-1 {
+      background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+    }
+
+    &.rank-2 {
+      background: linear-gradient(135deg, #c0c0c0 0%, #a0a0a0 100%);
+    }
+
+    &.rank-3 {
+      background: linear-gradient(135deg, #cd7f32 0%, #8b4513 100%);
+    }
+
+    &:not(.rank-1):not(.rank-2):not(.rank-3) {
+      background: #d9d9d9;
+      color: #595959;
+    }
+  }
+
+  .growth {
+    font-weight: 500;
+
+    &.up {
+      color: #52c41a;
+    }
+
+    &.down {
+      color: #ff4d4f;
+    }
+  }
+}
+
+.empty-state,
+.error-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  font-size: 16px;
+  color: #8c8c8c;
+
+  &.error-state {
+    color: #ff4d4f;
+  }
+}
