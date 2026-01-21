@@ -84,6 +84,22 @@ export default [
     ],
   },
   {
+    path: '/profile',
+    name: 'profile',
+    icon: 'user',
+    routes: [
+      {
+        path: '/profile',
+        redirect: '/profile/settings',
+      },
+      {
+        path: '/profile/settings',
+        name: 'profile.settings',
+        component: './profile/settings',
+      },
+    ],
+  },
+  {
     path: '/',
     redirect: '/welcome',
   },
