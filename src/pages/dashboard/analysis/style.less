@@ -1,0 +1,116 @@
+// 分析页整体样式
+.analysis-page {
+  .ant-pro-page-container-children-content {
+    padding: 24px;
+    background-color: #f0f2f5;
+    min-height: calc(100vh - 80px);
+  }
+}
+
+// 模块容器样式
+.analysis-module {
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 24px;
+}
+
+// 统计卡片样式
+.statistic-card {
+  height: 100%;
+
+  .ant-card-body {
+    padding: 20px 24px 8px;
+  }
+}
+
+.statistic-card-footer {
+  margin-top: 8px;
+  padding-top: 9px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+// 趋势指示器样式
+.trend {
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 16px;
+
+  .trend-icon {
+    margin-right: 4px;
+  }
+
+  &.trend-up {
+    color: #cf1322;
+  }
+
+  &.trend-down {
+    color: #3f8600;
+  }
+}
+
+.trend-label {
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+// 销售额模块样式
+.sales-card {
+  .ant-card-head {
+    border-bottom: none;
+  }
+
+  .ant-card-body {
+    padding: 0 24px 24px;
+  }
+}
+
+.sales-extra {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+// 门店排名样式
+.store-ranking {
+  h4 {
+    margin: 0 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+  }
+}
+
+.ranking-number {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 500;
+
+  &.top-three {
+    background-color: #314659;
+    color: #fff;
+  }
+
+  &.others {
+    background-color: #f0f2f5;
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+
+// 日销售额信息样式
+.daily-sales-info {
+  margin-top: 8px;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+}
+
+// 访问量/支付笔数底部信息样式
+.footer-info {
+  color: rgba(0, 0, 0, 0.45);
+}
