@@ -1,0 +1,59 @@
+.dataCard {
+  height: 160px;
+  
+  :global {
+    .ant-card-body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+    }
+  }
+}
+
+.cardTitle {
+  color: var(--ant-color-text-secondary, rgba(0, 0, 0, 0.45));
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.cardValue {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.trendContainer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.trendLabel {
+  color: var(--ant-color-text-secondary, rgba(0, 0, 0, 0.45));
+}
+
+.trendUp {
+  color: #52c41a;
+}
+
+.trendDown {
+  color: #ff4d4f;
+}
+
+.subDataContainer {
+  margin-top: 8px;
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.subDataLabel {
+  color: var(--ant-color-text-secondary, rgba(0, 0, 0, 0.45));
+  margin-right: 4px;
+}
+
+.subDataValue {
+  font-weight: 500;
+}

@@ -23,6 +23,22 @@ export default [
     ],
   },
   {
+    path: '/dashboard',
+    name: 'dashboard',
+    icon: 'dashboard',
+    routes: [
+      {
+        path: '/dashboard',
+        redirect: '/dashboard/analysis',
+      },
+      {
+        path: '/dashboard/analysis',
+        name: 'analysis',
+        component: './dashboard/analysis',
+      },
+    ],
+  },
+  {
     path: '/welcome',
     name: 'welcome',
     icon: 'smile',
